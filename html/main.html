@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <title>Document</title>
+        <script type="text/javascript">
+            $(function () {
+                $(".navi > li").mouseover(function () {
+                    // $(".navi > li > ul").stop().slideDown(500);
+                    $(this).find(".submenu").stop().slideDown(500);
+                });
+                $(".navi > li").mouseout(function () {
+                    // $(".navi > li > ul").stop().slideUp(500);
+                    $(this).find(".submenu").stop().slideUp(500);
+                });
+                $(".notice").mouseover(function () {
+                    $("#op1").css("opacity", "0.7");
+                });
+                $(".notice").mouseout(function () {
+                    $("#op1").css("opacity", "1.0");
+                });
+                $(".banner1").mouseover(function () {
+                    $("#op2").attr("src", "../../images/img.jpg");
+                });
+                $(".banner1").mouseout(function () {
+                    $("#op2").attr("src", "../../images/img2.jpg");
+                });
+                $(".banner2").mouseover(function () {
+                    $("#op3").fadeIn("slow");
+                });
+                $(".banner2").mouseout(function () {
+                    $("#op3").fadeOut("slow");
+                });
+                // 유형1
+                // $(".slider div:gt(0)").hide();
+                // setInterval(function () {
+                //     $(".slider div:first-child").fadeOut().next("div").fadeIn().end().appendTo(".slider");
+                // }, 3000);
+                //
+
+                // 유형2
+                // var c = 0;
+                // var s;
+                // setInterval(function () {
+                //     if (c < 2) {
+                //         c++;
+                //     } else {
+                //         c = 0;
+                //     }
+                //     s = (c * -500) + "px";
+                //     $(".ibox").animate({ top: s });
+                // }, 3000);
+
+                // 유형3
+                // var c = 0;
+                // var s;
+                // setInterval(function () {
+                //     if (c < 2) {
+                //         c++;
+                //     } else {
+                //         c = 0;
+                //     }
+                //     s = (c * -2000) + "px";
+                //     $(".ibox").animate({ left: s }, 400);
+                // }, 3000);
+
+                // 유형4
+                // var current = 0;
+                // setInterval(function () {
+                //     var next = (current + 1) % 3;
+                //     $(".slider").find("div").eq(current).fadeOut();
+                //     $(".slider").find("div").eq(next).fadeIn();
+                //     current = next;
+                // }, 3000);
+            });
+        </script>
+        <style></style>
+    </head>
+    <body>
+        <div class="slider">
+            <div class="ibox"><img src="../images/img-main-v1.png" alt="" /></div>
+            <div class="ibox"><img src="../images/img-main-v2.png" alt="" /></div>
+            <div class="ibox"><img src="../images/img-main-v3.png" alt="" /></div>
+        </div>
+        <div class="contents">
+            <div class="notice">
+                <img src="../images/img.jpg" alt="" id="op1" width="100%" height="300px" />
+            </div>
+            <div class="banner1">
+                <img src="../images/img2.jpg" alt="" id="op2" width="100%" height="300px" />
+            </div>
+            <div class="banner2">
+                <img src="../images/img3.jpg" alt="" id="op3" width="100%" height="300px" style="display: none; position: relative" />
+            </div>
+        </div>
+        <div style="clear: both"></div>
+        <div class="prod">
+            <h1>신상품 목록</h1>
+            <!-- ul.prod-list>li(>img+div.caption)*3 -->
+            <ul class="prod-list">
+                <li>
+                    <img src="../images/cupcake.jpg" alt="" />
+                    <div class="caption">
+                        <h1>상품1</h1>
+                        <p>치즈케잌</p>
+                        <p>가격 12,345원</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../images/pic.png" alt="" />
+                    <div class="caption">
+                        <h1>상품1</h1>
+                        <p>치즈케잌</p>
+                        <p>가격 12,345원</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../images/morning-glow.jpg" alt="" />
+                    <div class="caption">
+                        <h1>상품1</h1>
+                        <p>치즈케잌</p>
+                        <p>가격 12,345원</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- 줄바꿈 -->
+        <div style="clear: both"></div>
+        <div class="photo">
+            <div class="p1"><img src="../images/back1.jpg" alt="" width="300px" height="200px" /></div>
+            <div class="p2"><img src="../images/back2.jpg" alt="" width="300px" height="200px" /></div>
+            <div class="p3"><img src="../images/back3.jpg" alt="" width="300px" height="200px" /></div>
+        </div>
+    </body>
+</html>

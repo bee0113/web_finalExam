@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+            }
+            body {
+                margin: 50px;
+                background-color: pink;
+            }
+            ul,
+            li {
+                list-style-type: none;
+            }
+            .login_form {
+                /* margin-bottom: 50px; */
+            }
+            .bb {
+                text-align: center;
+            }
+            .mem_form {
+                margin-top: 200px;
+            }
+            .mem_form > ul {
+                text-align: center;
+            }
+            .mem_form > ul > li {
+                display: inline-block;
+            }
+            .cols {
+                text-align: center;
+            }
+            .cols > li {
+                display: inline-block;
+            }
+            .cols.c1 {
+                text-align: left;
+            }
+            .cols.c2 {
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login_form">
+            <h3 class="bb">회원가입</h3>
+            <form action="login.php" method="post" name="f">
+                <ul id="mem_form">
+                    <li>
+                        <ul class="cols">
+                            <li class="c1">아이디 :</li>
+                            <li class="c2">
+                                <input type="text" name="id" size="15" maxlength="15" />
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul class="cols">
+                            <li class="c1">비밀번호 :</li>
+                            <li class="c2">
+                                <input type="password" name="pw1" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="cols">
+                            <li class="c1">비밀번호 확인 :</li>
+                            <li class="c2">
+                                <input type="password" name="pw2" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="cols">
+                            <li class="c1">성별 :</li>
+                            <li class="c2">
+                                <input type="radio" value="male" name="gender" checked />남성 <input type="radio" value="female" name="gender" />여성
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="cols">
+                            <li class="c1">휴대전화</li>
+                            <li class="c2">
+                                <input
+                                    type="tel"
+                                    pattern="[0-9]{3}-[0-9]{3}-
+    [0-9]{3}"
+                                    title="###-####-####"
+                                />
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="cols">
+                            <li class="c1">이메일 :</li>
+                            <li class="c2">
+                                <input type="text" name="email" />@
+                                <select name="" id="">
+                                    <option value="">선택</option>
+                                    <option value="">naver.com</option>
+                                    <option value="">gmail.com</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="cols">
+                            <li class="c1">취미 :</li>
+                            <li class="c2">
+                                <input type="checkbox" name="hobby1" />쉼 <input type="checkbox" name="hobby2" />수선
+                                <input type="checkbox" name="hobby3" />청소
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="cols">
+                            <li class="c1">자기소개 :</li>
+                            <li class="c2">
+                                <textarea name="" id="" cols="35" rows="5"></textarea>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="cols">
+                            <li class="c1">파일 첨부 :</li>
+                            <li class="c2"><input type="file" />* 2MB까지 가능</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="bb">
+                    <input type="submit" value="가입" class="btn" />
+                    <input type="reset" value="취소" class="btn" />
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

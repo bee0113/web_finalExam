@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>YYS의 홈페이지</title>
+        <link rel="stylesheet" href="../css/index.css" />
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/common.js"></script>
+
+        <!-- s : bxslider -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <!-- e : bxslider -->
+
+        <script type="text/javascript">
+            $(function () {
+                $('.slider').bxSlider({
+                    mode: 'horizontal', // 가로 방향 수평 슬라이드
+                    speed: 1000, // 이동 속도를 설정
+                    pager: true, // 블릿
+                    moveSlides: 1, // 슬라이드 이동시 개수
+                    // slideWidth: 1900, // 슬라이드 너비
+                    // minSlides: 4, // 최소 노출 개수
+                    // maxSlides: 4, // 최대 노출 개수
+                    // slideMargin: 5, // 슬라이드간의 간격
+                    auto: true, // 자동 실행 여부
+                    autoHover: false, // 마우스 호버시 정지 여부
+                    controls: true, // 이전 다음 버튼 노출 여부
+                });
+
+                $('.notice').mouseover(function () {
+                    $('#op1').css('opacity', '0.7');
+                });
+                $('.notice').mouseout(function () {
+                    $('#op1').css('opacity', '1.0');
+                });
+                $('.banner1').mouseover(function () {
+                    $('#op2').attr('src', '../images/img.jpg');
+                });
+                $('.banner1').mouseout(function () {
+                    $('#op2').attr('src', '../images/img2.jpg');
+                });
+                $('.banner2').mouseover(function () {
+                    $('#op3').fadeIn('slow');
+                });
+                $('.banner2').mouseout(function () {
+                    $('#op3').fadeOut('slow');
+                });
+                // 모달
+                $('#m').click(function () {
+                    $('#modal').addClass('active');
+                });
+                $('.btn').click(function () {
+                    $('#modal').removeClass('active');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="wrap">
+            <header id="header">
+                <div class="header">
+                    <a href="./index.html">
+                        <h1 class="sta"></h1>
+                    </a>
+                    <div class="header__gnb">
+                        <nav>
+                            <!-- 메인 메뉴 -->
+                            <ul>
+                                <li>
+                                    <a href="#">수업미션</a>
+                                    <!-- 서브 메뉴 -->
+                                    <ul class="header__gnb__sub">
+                                        <li><a href="./table.html">미션1 table</a></li>
+                                        <li><a href="./product.html">미션2 product</a></li>
+                                        <li><a href="./box.html">미션3 box</a></li>
+                                        <li><a href="./position.html">미션4 position</a></li>
+                                        <li><a href="./z-index.html">미션5 z-index</a></li>
+                                        <li><a href="./index-old.html">미션5 수업용 index</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">나의작품</a>
+                                    <!-- 서브 메뉴 -->
+                                    <ul class="header__gnb__sub">
+                                        <li><a href="#">작품1</a></li>
+                                        <li><a href="#">작품2</a></li>
+                                        <li><a href="#">작품3</a></li>
+                                        <li><a href="#">작품4</a></li>
+                                        <li><a href="#">작품5</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#modal" id="m">모달</a>
+                                    <!-- 서브 메뉴 -->
+                                    <ul class="header__gnb__sub">
+                                        <li><a href="#">긴바지</a></li>
+                                        <li><a href="#">니트</a></li>
+                                        <li><a href="#">반바지</a></li>
+                                        <li><a href="#">스커트</a></li>
+                                        <li><a href="#">대님</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">로그인/회원가입</a>
+                                    <!-- 서브 메뉴 -->
+                                    <ul class="header__gnb__sub">
+                                        <li><a href="./login.html">로그인</a></li>
+                                        <li><a href="./join.html">New 회원가입</a></li>
+                                        <li><a href="./fieldset.html">회원가입</a></li>
+                                        <li><a href="">사이트맵</a></li>
+                                        <li><a href="">이미지맵</a></li>
+                                        <li><a href="">레시피</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__member__info">
+                        <a href="./login.html" class="btn__header__member">로그인</a>
+                    </div>
+                </div>
+                <div class="header__gnb__sub__cover"></div>
+            </header>
+            <section>
+                <!-- <iframe src="main.html" frameborder="0" width="100%" height="400px" name="ifr"></iframe> -->
+                <div class="slider">
+                    <div class="slider__img"><img src="../images/img-main-v1.png" alt="" /></div>
+                    <div class="slider__img"><img src="../images/img-main-v2.png" alt="" /></div>
+                    <div class="slider__img"><img src="../images/img-main-v3.png" alt="" /></div>
+                </div>
+                <div class="wrap__form">
+                    <div class="wrap__sub__form">
+                        <div class="prod__form">
+                            <h1>신상품 목록</h1>
+                            <ul class="prod__list">
+                                <li>
+                                    <img src="../images/cupcake.jpg" alt="" width="300px"/>
+                                    <div class="caption">
+                                        <h1>상품1</h1>
+                                        <p>치즈케잌</p>
+                                        <p>가격 12,345원</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="../images/pic.png" alt="" />
+                                    <div class="caption">
+                                        <h1>상품1</h1>
+                                        <p>치즈케잌</p>
+                                        <p>가격 12,345원</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="../images/morning-glow.jpg" alt="" />
+                                    <div class="caption">
+                                        <h1>상품1</h1>
+                                        <p>치즈케잌</p>
+                                        <p>가격 12,345원</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="prod__photo">
+                                <div class="p1"><img src="../images/back1.jpg" alt="" /></div>
+                                <div class="p2"><img src="../images/back2.jpg" alt="" /></div>
+                                <div class="p3"><img src="../images/back3.jpg" alt="" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="content__Area__form content__Area__01">
+                        <div class="notice">
+                            <img src="../images/img.jpg" alt="" id="op1" />
+                        </div>
+                        <div class="banner1">
+                            <img src="../images/img2.jpg" alt="" id="op2" />
+                        </div>
+                        <div class="banner2">
+                            <img src="../images/img3.jpg" alt="" id="op3" />
+                        </div>
+                    </div>
+
+                    <div class="content__Area__form content__Area__02">
+                        <div class="prod">
+                            <h1>신상품 목록</h1>
+                            <ul class="prod-list">
+                                <li>
+                                    <img src="../images/cupcake.jpg" alt="" />
+                                    <div class="caption">
+                                        <h1>상품1</h1>
+                                        <p>치즈케잌</p>
+                                        <p>가격 12,345원</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="../images/pic.png" alt="" />
+                                    <div class="caption">
+                                        <h1>상품1</h1>
+                                        <p>치즈케잌</p>
+                                        <p>가격 12,345원</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="../images/morning-glow.jpg" alt="" />
+                                    <div class="caption">
+                                        <h1>상품1</h1>
+                                        <p>치즈케잌</p>
+                                        <p>가격 12,345원</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="photo">
+                                <div class="p1"><img src="../images/back1.jpg" alt="" /></div>
+                                <div class="p2"><img src="../images/back2.jpg" alt="" /></div>
+                                <div class="p3"><img src="../images/back3.jpg" alt="" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 모달 -->
+            <div id="modal">
+                <div class="modal_up">
+                    <div class="uptitle">포장 배달 가능</div>
+                    <div class="upbody"><img src="../images/cupcake.jpg" alt="" width="600px" height="350px" /></div>
+                    <div class="btn">닫기</div>
+                </div>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+        <footer>
+            <div class="footer">
+                <div class="add">
+                    <div class="copy">
+                        <p>05000 서울특별시 광진구 군자로 121 세종사이버대학교</p>
+                        <p>Tel : 02-2204-8000 &nbsp; Fax &nbsp; : 2-2204-8036 E-mail &nbsp; : webmaster@sjcu.ac.kr</p>
+                        <span>2022 Sejong Cyber University's YYS &nbsp;</span> ALL RIGHTS RESERVED.
+                    </div>
+
+                    <ul class="menu">
+                        <li><a href="#none" class="privacy btn__pop--open" data-target="popMainFooter1">고객센터</a></li>
+                        <li><a href="#none" class="btn__pop--open" data-target="popMainFooter2">이용안내</a></li>
+                        <li><a href="#none" class="btn__pop--open" data-target="popMainFooter3">서비스이용약관</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

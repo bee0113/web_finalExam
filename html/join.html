@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/login.css" />
+        <link rel="stylesheet" href="../css/join.css" />
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/common.js"></script>
+        <title>회원가입</title>
+        <script>
+            $(function () {});
+            var chkYn = 'N'; // 중복검사 여부
+
+            function duplicateCheck() {
+                var id = $('#user-id').val();
+
+                if (isNull(id)) {
+                    alert('아이디를 입력해주세요');
+                    return false;
+                } else {
+                    if (id != 'admin') {
+                        $('#check-id').html('이미 존재하는 아이디 입니다.').css('color', 'red');
+                        return false;
+                    }
+                    if (id == 'admin') {
+                        $('#check-id').html('사용 가능한 아이디 입니다.').css('color', 'green');
+                        chkYn = 'Y';
+                        return true;
+                    }
+                }
+            }
+
+            function pwCfmCheck() {
+                var pw1 = $('pwd1').val();
+                var pw2 = $('pwd2').val();
+                if (pw1 != pw2) {
+                    $('#check-pw').html('비밀번호가 일치하지 않습니다.').css('color', 'red');
+                    return false;
+                }
+                if (pw1 == pw2) {
+                    $('#check-pw').html('비밀번호가 일치합니다.').css('color', 'green');
+                    return true;
+                }
+            }
+
+            function validationChk() {
+                if (chkYn == 'N') {
+                    alert('아이디 중복검사를 확인해주세요.');
+                    return false;
+                }
+
+                if (!idCheck($('#user-id').val())) {
+                    alert('아이디는 4~20자, 영문 대소문자, 숫자만 입력 가능합니다.');
+                    $('#user-id').val('');
+                    $('#user-id').focus();
+                    return false;
+                }
+
+                if (!pwCfmCheck($('#user-pw').val())) {
+                    alert('비밀번호 일치 여부를 확인해주세요.');
+                    return false;
+                }
+
+                if (id == 'admin' && pw1 == '1234') {
+                    alert('가입이 완료되었습니다.');
+                    return true;
+                }
+
+                return false;
+            }
+
+            function cancle() {
+                $('check-id').html('');
+                $('check-pw').html('');
+            }
+        </script>
+    </head>
+    <body class="header__member">
+        <div id="wrap" class="">
+            <header id="header">
+                <div class="header">
+                    <a href="./index.html">
+                        <h1 class="sta"></h1>
+                    </a>
+                    <div class="header__gnb">
+                        <nav>
+                            <!-- 메인 메뉴 -->
+                            <ul>
+                                <li>
+                                    <a href="#">수업미션</a>
+                                    <!-- 서브 메뉴 -->
+                                    <ul class="header__gnb__sub">
+                                        <li><a href="./table.html">미션1 table</a></li>
+                                        <li><a href="./product.html">미션2 product</a></li>
+                                        <li><a href="./box.html">미션3 box</a></li>
+                                        <li><a href="./position.html">미션4 position</a></li>
+                                        <li><a href="./z-index.html">미션5 z-index</a></li>
+                                        <li><a href="./index-old.html">미션5 수업용 index</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">나의작품</a>
+                                    <!-- 서브 메뉴 -->
+                                    <ul class="header__gnb__sub">
+                                        <li><a href="#">작품1</a></li>
+                                        <li><a href="#">작품2</a></li>
+                                        <li><a href="#">작품3</a></li>
+                                        <li><a href="#">작품4</a></li>
+                                        <li><a href="#">작품5</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#modal" id="m">모달</a>
+                                    <!-- 서브 메뉴 -->
+                                    <ul class="header__gnb__sub">
+                                        <li><a href="#">긴바지</a></li>
+                                        <li><a href="#">니트</a></li>
+                                        <li><a href="#">반바지</a></li>
+                                        <li><a href="#">스커트</a></li>
+                                        <li><a href="#">대님</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">로그인/회원가입</a>
+                                    <!-- 서브 메뉴 -->
+                                    <ul class="header__gnb__sub">
+                                        <li><a href="./login.html">로그인</a></li>
+                                        <li><a href="./join.html">New 회원가입</a></li>
+                                        <li><a href="./fieldset.html">회원가입</a></li>
+                                        <li><a href="">사이트맵</a></li>
+                                        <li><a href="">이미지맵</a></li>
+                                        <li><a href="">레시피</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__member__info">
+                        <a href="./login.html" class="btn__header__member">로그인</a>
+                    </div>
+                </div>
+                <div class="header__gnb__sub__cover"></div>
+            </header>
+            <div id="container">
+                <div class="wrap__join">
+                    <div class="wrap__join__header">
+                        <h1>회원가입</h1>
+                    </div>
+                    <div class="join__form">
+                        <form action="./login.html" method="get" name="ff" onsubmit="validationChk();return false;">
+                            <fieldset>
+                                <h2>로그인 정보</h2>
+                                <ul>
+                                    <li>
+                                        <label for="user-id">아이디</label>
+                                        <input type="text" id="user-id" />
+                                        <input type="button" class="chk_btn" onclick="duplicateCheck()" value="중복검사" />
+                                        <div id="check-id"></div>
+                                    </li>
+                                    <li>
+                                        <label for="pwd1">비밀번호</label>
+                                        <input type="password" id="pwd1" placeholder="" />
+                                        <input type="button" class="chk_btn" onclick="pwCfmCheck()" value="비밀번호 확인" />
+                                        <div id="check-pw"></div>
+                                    </li>
+                                    <li>
+                                        <label for="pwd2">비밀번호 확인</label>
+                                        <input type="password" id="pwd2" />
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <fieldset>
+                                <h2>개인 정보</h2>
+                                <ul>
+                                    <li>
+                                        <label for="userNm">이름</label>
+                                        <input type="text" id="userNm" />
+                                    </li>
+                                    <li>
+                                        <label for="email">메일 주소</label>
+                                        <input type="text" id="email" />
+                                    </li>
+                                    <li>
+                                        <label for="phone">연락처</label>
+                                        <input type="tel" id="phone" />
+                                    </li>
+                                    <li>
+                                        <label for="homepage">블로그/홈페이지</label>
+                                        <input type="url" id="homepage" />
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <div class="join__cfm">
+                                <button type="submit" class="btn__base btn__yes" id="joinBtn">가입하기</button>
+                                <button type="reset" class="btn__base btn__no" id="resetBtn" onclick="cancle()">취소</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

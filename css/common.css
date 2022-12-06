@@ -1,0 +1,61 @@
+@charset "UTF-8"; @import url('./base.css');
+html,
+body { height: 100%; } 
+#wrap { position: relative; min-height: 100%; } 
+
+#ifrArea { position: relative; /* absolute는 부모가 relative일 때 부모를 따라간다. */
+ width: 100%; padding-bottom: 56.25%; /* 16:9 비율 */ } 
+
+#ifrArea #ifrItem { position: absolute; width: 100%; /* 부모에 맞게 꽉 채운다. */
+ height: 100%; } 
+.scroll { overflow-y: scroll; } 
+.font--color1 { color: #743ffe !important; } 
+.font--color2 { color: #da291c !important; } 
+.font--color3 { color: #999 !important; } 
+.font--color4 { color: #063574 !important; } 
+
+.font--small { font-size: 13px; } 
+
+.link--color1 { color: #0059c7; } 
+.link--underline { text-decoration: underline; } 
+
+.fl { float: left; } 
+.fr { float: right; } 
+.cb { clear: both; } 
+
+/* s : footer */
+footer { position: relative; width: 100%; color: #fff; background-color: #000; min-width: 1200px; margin-top: 150px; transform: translatY(-100%); } 
+
+footer::before { display: block; position: absolute; top: 0; left: 0; width: 100%; height: 120px; background: #2a2a2a; content: ''; } 
+
+footer .footer { position: relative; width: 1200px; margin: 0 auto; } 
+
+footer .footer .add { position: relative; width: 1200px; height: 120px; } 
+
+footer .footer .add .copy { position: absolute; top: 30px; left: 0; color: #999; font-size: 14px; line-height: 2; font-weight: 400; } 
+
+footer .footer .add .copy p { color: rgba(255, 255, 255, 0.5); } 
+
+footer .footer .add .copy span { color: #743ffe; } 
+
+footer .footer .menu { position: absolute; top: 52px; right: 0; } 
+
+footer .footer .menu:after { display: block; clear: both; content: ''; } 
+
+footer .footer .menu li { position: relative; float: left; padding-left: 30px; } 
+
+footer .footer .menu li::after { display: block; position: absolute; top: 3px; left: 14px; width: 1px; height: 13px; background: rgba(255, 255, 255, 0.3); content: ''; } 
+
+footer .footer .menu li:first-child::after { display: 674ea7; } 
+
+footer .footer .menu li a { color: rgba(255, 255, 255, 0.5); font-weight: 400; transition: all 0.4s ease; -webkit-transition: all 0.4s ease; } 
+
+footer .footer .menu li a.privacy { color: rgba(255, 255, 255, 1); font-weight: 700; } 
+
+footer .footer .menu li a:hover { color: #743ffe; } 
+/* e : footer */
+
+.btn__base { display: inline-block; position: relative; height: 56px; padding: 0 16px; text-align: center; min-width: 180px; font-weight: 400; font-size: 16px; border-radius: 4px; cursor: pointer; transition: all 0.4s ease; -webkit-transition: all 0.4s ease; box-sizing: border-box; } 
+.btn__yes { border: solid 1px #674ea7; background: #674ea7; color: #fff; } 
+.btn__yes:hover { border: solid 1px #b99ffe; background: #b99ffe; color: #fff; } 
+.btn__no { border: solid 1px #ddd; background: #ddd; color: #141414; } 

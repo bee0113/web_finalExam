@@ -1,0 +1,227 @@
+﻿@charset "UTF-8";
+
+
+.header__member #header{background: #fff; border-bottom: solid 1px #ddd;}
+
+.header__member #header .header .btn__header__member{background: url('../img/ico-member-on.png') no-repeat center;}
+
+.header__member #header h1{background: url('../img/sta.png') no-repeat center;}
+
+.header__member #header .header__gnb nav > ul > li > a{color: #222;}
+
+.header__member #container{padding: 170px 0 0;}
+
+.header__member #header .header__member__info > p{color: #222;}
+.header__member #header .header__member__info > p > a{color: #222;}
+.header__member #header .header__member__info > button{background: url('../img/ico-logout-on.png') no-repeat center;}
+
+
+.wrap__login{position: relative; width: 384px; margin: 0 auto;}
+
+.wrap__login:after{display:block;clear:both;content:''}
+
+
+.wrap__login .wrap__login__header{position: relative; text-align: center;}
+
+.wrap__login .wrap__login__header h1{font-size: 30px; font-weight: 700; line-height: 1;}
+
+.wrap__login .wrap__login__header h3{font-size: 15px; font-weight: 400; margin-top: 27px;}
+
+.wrap__login .wrap__login__header ul:after{content: ''; display: block; height: 30px;}
+
+.wrap__login .wrap__login__header ul li{position: relative; float: left; width: 50%; text-align: center; box-sizing: border-box;}
+
+.wrap__login .wrap__login__header ul li a{display: block; font-size: 30px; font-weight: 700; line-height: 1; color: #ccc;}
+
+.wrap__login .wrap__login__header ul li.active a{color: #222;}
+
+.wrap__login .wrap__login__header ul li:first-child{padding: 0 30px 0 0;}
+
+.wrap__login .wrap__login__header ul li:first-child::after{content: ''; display: block; position: absolute; top: 1px; right: 0; width: 1px; height: 28px; background: #ccc;}
+
+.wrap__login .wrap__login__header ul li:last-child{padding: 0 0 0 30px;}
+
+
+.wrap__login .login__form{margin-top: 100px;}
+
+.wrap__login .login__form label{line-height: 1;}
+
+.wrap__login .login__form input{width: 100%; height: 60px; border-radius: 0; border-top: none; border-left: none; border-right: none; padding: 0; font-size: 16px; background: none; box-sizing: border-box;}
+
+.wrap__login .login__form .login__form__id  input{background: url('../img/ico-login-id.png') no-repeat left center; padding-left: 32px;}
+
+.wrap__login .login__form .login__form__pw{margin: 40px 0 27px;}
+
+.wrap__login .login__form .login__form__pw  input{background: url('../img/ico-login-pw.png') no-repeat left center; padding-left: 32px;}
+
+.wrap__login .login__form > button{width: 100%;}
+
+
+.wrap__login .login__util{text-align: right; margin:  0 0 47px;}
+
+.wrap__login .login__util a{position: relative; padding: 0 0  0 40px; line-height: 1;}
+
+.wrap__login .login__util a::after{content: ''; display: block; position: absolute; top: 3px; left: 19px; width: 1px; height: 13px; background: #ccc;}
+
+.wrap__login .login__util a:first-child::after{display: none;}
+
+.wrap__login .login__util a:last-child{color: #01b8e6; font-weight: 700;}
+
+
+.wrap__login .alert__util{height: 50px; line-height: 50px;}
+
+.wrap__login .alert__util > span{background: url('../img/ico-alert.png') no-repeat left top; padding-left: 25px; color: #da291c; min-height: 18px; display: none;}
+
+
+.wrap__login .wrap__member__btn{margin: 50px 0 0;}
+
+.wrap__login .wrap__member__btn:after{content: ''; display: block; height: 30px;}
+
+.wrap__login .wrap__member__btn button{width: 100%;}
+
+.wrap__login .wrap__member__btn.half > div{float: left; width: 50%; box-sizing: border-box;}
+
+.wrap__login .wrap__member__btn.half > div:nth-child(1){padding: 0 12px 0 0;}
+
+.wrap__login .wrap__member__btn.half > div:nth-child(2){padding: 0 0 0 12px;}
+
+
+.wrap__find__result{position: relative; margin: 50px 0 0; padding: 60px 30px 60px 204px; min-height: 176px; border-top: solid 2px #222; border-bottom: solid 2px #ddd; box-sizing: border-box;}
+
+.wrap__find__result .wrap__find__result__info{font-size: 18px;}
+
+.wrap__find__result .wrap__find__result__info strong{color: #01b8e6;}
+
+.wrap__find__result .wrap__find__result__ico{position: absolute; top: 50%; left: 30px; margin: -50px 0 0; border: solid 1px #ddd; width: 100px; height: 100px; border-radius: 100%;}
+
+.wrap__find__result .wrap__find__result__id{background: #fafafa url('../img/ico-id.png') no-repeat center;}
+
+.wrap__find__result .wrap__find__result__pw{background: #fafafa url('../img/ico-pw.png') no-repeat center;}
+
+
+.wrap__join{position: relative; width: 996px; margin: 0 auto;}
+
+.wrap__join:after{display:block;clear:both;content:''}
+
+
+.wrap__join .wrap__join__header{position: relative; text-align: center;}
+
+.wrap__join .wrap__join__header h1{font-size: 30px; font-weight: 700; line-height: 1;}
+
+.wrap__join .wrap__join__header ul{position: relative; width: 368px; margin: 60px auto 0; height: 78px;}
+
+.wrap__join .wrap__join__header ul::before{content: ''; display: block; position: absolute; top: 24px; left: 15px; right: 15px; width: auto; height: 1px; background: #ddd;}
+
+.wrap__join .wrap__join__header ul:after{content: ''; display: block; height: 30px;}
+
+.wrap__join .wrap__join__header ul li{position: absolute; height: 78px; white-space: nowrap; font-size: 16px; font-weight: 700; color: #666; z-index: 1;}
+
+.wrap__join .wrap__join__header ul li p{width: 48px; height: 48px; line-height: 48px; color: #ccc; font-size: 18px; font-weight: 700; margin: 0 auto 12px; background: #fafafa; border: solid 1px #ddd; box-sizing: border-box; border-radius: 100%;}
+
+.wrap__join .wrap__join__header ul li:nth-child(1){top: 0; left: 0;}
+
+.wrap__join .wrap__join__header ul li:nth-child(2){top: 0; left: 50%; margin: 0 0 0 -24px;}
+
+.wrap__join .wrap__join__header ul li:nth-child(3){top: 0; right: 0;}
+
+.wrap__join .wrap__join__header ul li.active{color: #01b8e6;}
+
+.wrap__join .wrap__join__header ul li.active p{background: #01b8e6; border-color: #01b8e6; color: #fff;}
+
+
+.wrap__join .join__form{margin-top: 100px;}
+
+.wrap__join .join__form h2{font-size: 24px;}
+
+.wrap__join .join__form .join__agree__box{margin: 17px 0 0 ; padding: 15px 20px; font-size: 15px; line-height: 1.8; color: #666; text-align: center; height: 250px; border: solid 1px #ddd; overflow-y: scroll; box-sizing: border-box;}
+
+.wrap__join .join__form .join__agree__check{text-align: right; margin: 20px 0 50px;}
+
+
+.wrap__join .join__form table{width: 100%; border-top: solid 2px #222; border-bottom: solid 1px #ddd;}
+
+.wrap__join .join__form table th{text-align: left; padding: 10px 30px; font-size: 16px; height: 80px; box-sizing: border-box}
+
+.wrap__join .join__form table td{text-align: left; padding: 10px 30px; font-size: 16px; height: 80px; box-sizing: border-box;}
+
+.wrap__join .join__form table td input{height: 60px; font-size: 16px;}
+
+.wrap__join .join__form table td select{height: 60px; font-size: 16px;}
+
+.wrap__join .join__form .wrap__input--search{padding: 0 58px 0 0; height: 60px;}
+.wrap__join .join__form .wrap__input--search input{height: 58px;}
+.wrap__join .join__form .wrap__input--search button{width: 58px; height: 58px;}
+
+.wrap__join .join__form table .required{color: #da291c;}
+
+.wrap__join .join__form table .btn__base{min-width: 120px; height: 60px;}
+
+.wrap__join .join__form table .wrap__form__item__label{line-height: 60px; font-size: 14px; font-weight: 400;}
+
+.wrap__join .join__form table:not(.form__table2) tr:first-child th,
+.wrap__join .join__form table:not(.form__table2) tr:first-child td{padding-top: 30px;}
+
+.wrap__join .join__form table:not(.form__table2) tr:last-child th,
+.wrap__join .join__form table:not(.form__table2) tr:last-child td{padding-bottom: 30px;}
+
+
+.wrap__join .alert__util{height: 60px; line-height: 60px;}
+
+.wrap__join .alert__util > span{background: url('../img/ico-alert.png') no-repeat left top; padding: 1px 0 2px 25px; color: #da291c;}
+
+.wrap__join .alert__util > span.alert__util__green{background: url('../img/ico-alert3.png') no-repeat left top; padding: 1px 0 2px 25px; color: #00ba42;}
+
+
+.wrap__join .join__form.my{margin-top: 60px;}
+
+.wrap__join .join__form.my td > button{height: 42px;}
+
+
+.wrap__join__complete{padding: 130px 0 0; background: url('../img/ico-complete.png') no-repeat center top; text-align: center; line-height: 1;}
+
+.wrap__join__complete.wait{background: url('../img/ico-wait.png') no-repeat center top;}
+
+.wrap__join__complete h2{font-size: 30px; font-weight: 400;}
+
+.wrap__join__complete p{font-size: 18px; margin: 27px 0 0;}
+
+
+.wrap__join .join__terms{margin-top: 60px; border-top: solid 2px #222;}
+
+.wrap__join .join__terms + *{margin: 80px 0 0;}
+
+.wrap__join .join__terms .join__terms__header{padding: 43px 20px 32px; font-size: 16px; color: #666; line-height: 29px; border-bottom: solid 1px #ddd;}
+
+.wrap__join .join__terms dl{}
+
+.wrap__join .join__terms dl dt{padding: 16px 20px; height: 58px; font-size: 15px; color: #666; font-weight: 700; line-height: 28px; border-bottom: solid 1px #ddd; cursor: pointer; box-sizing: border-box; background: url('../img/ico-terms-arrow-close.png') no-repeat right 20px center;}
+
+.wrap__join .join__terms dl dt.open{background: url('../img/ico-terms-arrow-open.png') no-repeat right 20px center;}
+
+.wrap__join .join__terms dl dd{display: none; padding: 16px 20px; font-size: 15px; color: #666; line-height: 28px; border-bottom: solid 1px #ddd; box-sizing: border-box;}
+
+.wrap__join .join__terms dl dd p + ol,
+.wrap__join .join__terms dl dd p + ul{margin-top: 27px;}
+
+.wrap__join .join__terms .join__terms__content{padding: 40px; font-size: 15px; color: #666; line-height: 28px; border-bottom: solid 1px #ddd; box-sizing: border-box;}
+
+
+.password__table{width: 510px; margin: 20px auto 0;}
+
+.password__table th{text-align: left; padding: 7px 15px; font-size: 16px; box-sizing: border-box;}
+
+.password__table th.vertical--top{vertical-align: top; padding-top: 25px;}
+
+.password__table td{text-align: left; padding: 7px 15px; font-size: 16px; box-sizing: border-box;}
+
+.password__table td input{height: 50px; font-size: 16px;}
+
+.password__table td select{height: 50px; font-size: 16px;}
+
+.password__table .wrap__form__item__label{height: 35px; line-height: 35px; font-size: 14px; font-weight: 400;}
+
+.password__table .alert__util{height: 35px; line-height: 35px;}
+
+.password__table .alert__util > span{background: url('../img/ico-alert.png') no-repeat left top; padding: 1px 0 2px 25px; color: #da291c;}
+
+.password__table .alert__util > span.alert__util__ok{background: url('../img/ico-alert2.png') no-repeat left top; padding: 1px 0 2px 25px; color: #043577;}

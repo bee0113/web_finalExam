@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script>
+            function a() {
+                var age = prompt('당신의 나이를 입력하세요', '나이입력');
+                if (age >= 19) {
+                    location.href = 'https://www.naver.com';
+                } else {
+                    location.href = 'https://www.google.co.kr';
+                }
+            }
+            function ff() {
+                var f = confirm('삭제하시겠습니까?');
+                if (f == true) {
+                    alert('삭제되었습니다.');
+                } else {
+                    alert('삭제되지 않았습니다.');
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="a()">클릭</button>
+        <button onclick="ff()">클릭</button>
+    </body>
+</html>

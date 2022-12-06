@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/login.css" />
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/common.js"></script>
+        <title>LOGIN</title>
+        <script type="text/javascript">
+            $(function () {});
+            function validationChk() {
+                var reg = /^[A-Za-z]{1}[A-Za-z0-9](?=.*?[#?!@$^&*-]).{6,12}$/;
+                // var idd = document.getElementById("id").value;
+                // var pw = document.getElementById("pw").value;
+                var idd = $('#userId');
+                var pw = $('#userPw');
+
+                if (idd.val() == '') {
+                    alert('아이디를 입력하세요');
+                    idd.focus();
+                    return false;
+                } else if (!reg.test(idd.val())) {
+                    alert('아이디는 7~12자리로 지정하고\n특수문자가 포함되어야 합니다');
+                    idd.val("");
+                    return false;
+                } else if (pw.val() == '') {
+                    alert('비밀번호를 입력하세요');
+                    pw.focus();
+                    return false;
+                } else if (idd.val() != 'admin12@' || pw.val() != '1234') {
+                    alert('아이디와 비밀번호가 일치하지 않습니다.');
+                    idd.val("");
+                    pw.val("");
+                    idd.focus();
+                    return false;
+                } else {
+                    alert('admin님 환영합니다.');
+                    return true;
+                }
+            }
+        </script>
+    </head>
+    <body class="header__member">
+        <div id="wrap">
+            <header id="header">
+                <div class="header">
+                    <a href="./index.html">
+                        <h1 class="sta"></h1>
+                    </a>
+                    <div class="header__gnb">
+                        <nav>
+                            <!-- 메인 메뉴 -->
+                            <ul>
+                                <li>
+                                    <a href="#">수업미션</a>
+                                    <!-- 서브 메뉴 -->
+                                    <ul class="header__gnb__sub">
+                                        <li><a href="./table.html">미션1 table</a></li>
+                                        <li><a href="./product.html">미션2 product</a></li>
+                                        <li><a href="./box.html">미션3 box</a></li>
+                                        <li><a href="./position.html">미션4 position</a></li>
+                                        <li><a href="./z-index.html">미션5 z-index</a></li>
+                                        <li><a href="./index-old.html">미션5 수업용 index</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">나의작품</a>
+                                    <!-- 서브 메뉴 -->
+                                    <ul class="header__gnb__sub">
+                                        <li><a href="#">작품1</a></li>
+                                        <li><a href="#">작품2</a></li>
+                                        <li><a href="#">작품3</a></li>
+                                        <li><a href="#">작품4</a></li>
+                                        <li><a href="#">작품5</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#modal" id="m">모달</a>
+                                    <!-- 서브 메뉴 -->
+                                    <ul class="header__gnb__sub">
+                                        <li><a href="#">긴바지</a></li>
+                                        <li><a href="#">니트</a></li>
+                                        <li><a href="#">반바지</a></li>
+                                        <li><a href="#">스커트</a></li>
+                                        <li><a href="#">대님</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">로그인/회원가입</a>
+                                    <!-- 서브 메뉴 -->
+                                    <ul class="header__gnb__sub">
+                                        <li><a href="./login.html">로그인</a></li>
+                                        <li><a href="./join.html">New 회원가입</a></li>
+                                        <li><a href="./fieldset.html">회원가입</a></li>
+                                        <li><a href="">사이트맵</a></li>
+                                        <li><a href="">이미지맵</a></li>
+                                        <li><a href="">레시피</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__member__info">
+                        <a href="./login.html" class="btn__header__member">로그인</a>
+                    </div>
+                </div>
+                <div class="header__gnb__sub__cover"></div>
+            </header>
+            <div id="container">
+                <form action="" method="get" name="fa" onsubmit="validationChk();return false;">
+                    <div class="wrap__login">
+                        <div class="wrap__login__header">
+                            <h1>로그인</h1>
+                            <h3>가입하신 아이디와 비밀번호를 입력해 주세요.</h3>
+                        </div>
+
+                        <div class="login__form">
+                            <div class="login__form__id">
+                                <label>아이디</label>
+                                <input type="text" id="userId" class="required__input" placeholder="아이디를 입력해 주세요." />
+                            </div>
+
+                            <div class="login__form__pw">
+                                <label>비밀번호</label>
+                                <input type="password" id="userPw" class="required__input" placeholder="비밀번호를 입력해 주세요." />
+                            </div>
+
+                            <div class="login__util">
+                                <a href="#">아이디/비밀번호 찾기</a>
+                                <a href="./join.html">회원가입</a>
+                            </div>
+
+                            <button type="submit" class="btn__base btn__base__color1 btn__required__input">로그인</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

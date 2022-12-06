@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>YYS의 홈페이지(수업용)</title>
+        <link rel="stylesheet" href="../css/style.css" />
+        <script src="../js/jquery-3.6.0.min.js"></script>
+
+        <!-- s : bxslider -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <!-- e : bxslider -->
+
+        <script type="text/javascript">
+            $(function () {
+                $('.slider').bxSlider();
+
+                $('.navi > li').mouseover(function () {
+                    $('.navi > li > ul').stop().slideDown(500);
+                    // $(this).find('.submenu').stop().slideDown(500);
+                });
+                $('.navi > li').mouseout(function () {
+                    $('.navi > li > ul').stop().slideUp(500);
+                    // $(this).find('.submenu').stop().slideUp(500);
+                });
+                $('.notice').mouseover(function () {
+                    $('#op1').css('opacity', '0.7');
+                });
+                $('.notice').mouseout(function () {
+                    $('#op1').css('opacity', '1.0');
+                });
+                $('.banner1').mouseover(function () {
+                    $('#op2').attr('src', '../images/img.jpg');
+                });
+                $('.banner1').mouseout(function () {
+                    $('#op2').attr('src', '../images/img2.jpg');
+                });
+                $('.banner2').mouseover(function () {
+                    $('#op3').fadeIn('slow');
+                });
+                $('.banner2').mouseout(function () {
+                    $('#op3').fadeOut('slow');
+                });
+                // 모달
+                $('#m').click(function () {
+                    $('#modal').addClass('active');
+                });
+                $('.btn').click(function () {
+                    $('#modal').removeClass('active');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <div class="logo">
+                    <a href="./index.html"> <img src="../images/animals-1295973_1280.png" alt="" width="230px" height="80px" /></a>
+                </div>
+                <div id="s-menu">
+                    <a href="./login.html">로그인</a> | <a href="#">회원가입</a> | <a href="#">이용안내</a> |
+                    <a href="#">고객센터</a>
+                </div>
+            </header>
+            <nav>
+                <!-- 메인 메뉴 -->
+                <ul class="navi">
+                    <li>
+                        <a href="#">수업미션</a>
+                        <!-- 서브 메뉴 -->
+                        <ul class="submenu">
+                            <li><a href="./table.html">미션1:table</a></li>
+                            <li><a href="./product.html">미션2:product</a></li>
+                            <li><a href="./box.html">미션3:box</a></li>
+                            <li><a href="./position.html">미션4:position</a></li>
+                            <li><a href="./z-index.html">미션5:z-index</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">나의작품</a>
+                        <!-- 서브 메뉴 -->
+                        <ul class="submenu">
+                            <li><a href="#">작품1</a></li>
+                            <li><a href="#">작품2</a></li>
+                            <li><a href="#">작품3</a></li>
+                            <li><a href="#">작품4</a></li>
+                            <li><a href="#">작품5</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#modal" id="m">모달</a>
+                        <!-- 서브 메뉴 -->
+                        <ul class="submenu">
+                            <li><a href="#">긴바지</a></li>
+                            <li><a href="#">니트</a></li>
+                            <li><a href="#">반바지</a></li>
+                            <li><a href="#">스커트</a></li>
+                            <li><a href="#">대님</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">로그인/회원가입</a>
+                        <!-- 서브 메뉴 -->
+                        <ul class="submenu">
+                            <li><a href="">로그인</a></li>
+                            <li><a href="">회원가입</a></li>
+                            <li><a href="">사이트맵</a></li>
+                            <li><a href="">이미지맵</a></li>
+                            <li><a href="">레시피</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <section>
+                <!-- <iframe src="main.html" frameborder="0" width="100%" height="400px" name="ifr"></iframe> -->
+                <div class="slider">
+                    <div><img src="../images/img-main-v1.png" alt="" /></div>
+                    <div><img src="../images/img-main-v2.png" alt="" /></div>
+                    <div><img src="../images/img-main-v3.png" alt="" /></div>
+                </div>
+                <div class="contents">
+                    <div class="notice">
+                        <img src="../images/img.jpg" alt="" id="op1" width="100%" height="300px" />
+                    </div>
+                    <div class="banner1">
+                        <img src="../images/img2.jpg" alt="" id="op2" width="100%" height="300px" />
+                    </div>
+                    <div class="banner2">
+                        <img src="../images/img3.jpg" alt="" id="op3" width="100%" height="300px" style="display: none; position: relative" />
+                    </div>
+                </div>
+                <div style="clear: both"></div>
+                <div class="prod">
+                    <h1>신상품 목록</h1>
+                    <!-- ul.prod-list>li(>img+div.caption)*3 -->
+                    <ul class="prod-list">
+                        <li>
+                            <img src="../images/cupcake.jpg" alt="" />
+                            <div class="caption">
+                                <h1>상품1</h1>
+                                <p>치즈케잌</p>
+                                <p>가격 12,345원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../images/pic.png" alt="" />
+                            <div class="caption">
+                                <h1>상품1</h1>
+                                <p>치즈케잌</p>
+                                <p>가격 12,345원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../images/morning-glow.jpg" alt="" />
+                            <div class="caption">
+                                <h1>상품1</h1>
+                                <p>치즈케잌</p>
+                                <p>가격 12,345원</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div style="clear: both"></div>
+                <div class="photo">
+                    <div class="p1"><img src="../images/back1.jpg" alt="" width="300px" height="200px" /></div>
+                    <div class="p2"><img src="../images/back2.jpg" alt="" width="300px" height="200px" /></div>
+                    <div class="p3"><img src="../images/back3.jpg" alt="" width="300px" height="200px" /></div>
+                </div>
+            </section>
+            <!-- 모달 -->
+            <div id="modal">
+                <div class="modal_up">
+                    <div class="uptitle">포장 배달 가능</div>
+                    <div class="upbody"><img src="../images/cupcake.jpg" alt="" width="600px" height="350px" /></div>
+                    <div class="btn">닫기</div>
+                </div>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+        <footer>
+            <!-- <p>2022 Sejong Cyber University's YYS All Rights Reserved</p> -->
+            <ul>
+                <li>05000 서울특별시 광진구 군자로 121 세종사이버대학교</li>
+                <li>대표자 : 신구</li>
+                <li>전화번호 : 02-2204-8000</li>
+                <li>팩스 : 02-2204-8036</li>
+                <li>이메일 : webmaster@sjcu.ac.kr</li>
+            </ul>
+        </footer>
+    </body>
+</html>
