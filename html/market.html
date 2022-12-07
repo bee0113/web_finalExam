@@ -12,8 +12,8 @@
             $(function () {
                 var cnt = 3;
                 for (let index = 0; index < cnt; index++) {
-                    var str = $('.prod__item').clone();
-                    $('.css-vjtyom').append(str);
+                    var str = $('.prod__list__item').clone();
+                    $('.prod__list').append(str);
                 }
             });
         </script>
@@ -96,33 +96,32 @@
                 </div>
                 <div class="wrap__form">
                     <div class="wrap__sub__form">
-                        <div class="prod prod__form">
+                        <div class="prod__form">
                             <h1>신상품 목록</h1>
-                            <div class="css-pzlq5x">
-                                <div class="css-vjtyom">
-                                    <a href="#" class="css-1xyd46f prod__item">
-                                        <div class="css-0">
-                                            <div class="css-1mlybuj">
+                            <div class="prod__sub__form">
+                                <div class="prod__list">
+                                    <a href="#" class="prod__list__item">
+                                        <div class="">
+                                            <div class="prod__list__item__img">
                                                 <img
                                                     src="https://product-image.kurly.com/cdn-cgi/image/width=676,format=auto/product/image/3f214d36-b8aa-40b8-9a06-8feee8829d16.jpg"
                                                     alt="상품 이미지"
                                                     loading="lazy"
                                                 />
                                                 <div>
-                                                    <button type="button" class="css-1lapv13">
-                                                        <img src="../images/ico-star1.png" alt="장바구니 아이콘" />
+                                                    <button type="button" class="prod__list__item__like">
+                                                        <img src="../images/ico-star1.png" alt="찜하기" />
                                                     </button>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="css-c1cgl">
-                                            <span class="css-1qd61ut"><span class="css-1mp68i5">샛별배송</span></span
-                                            ><span class="css-rklo75">[라라스윗] 생우유 빵샌드 아이스크림 </span>
-                                            <div class="css-1sieafg">
-                                                <div></div>
-                                                <span class="sales-price css-18tpqqq">9,400<span class="won"> 원</span></span>
+                                        <div class="prod__list__item__desc">
+                                            <span class="prod__list__item__desc__best"><span class="prod__list__item__desc__best_g">인기상품</span></span>
+                                            <span class="prod__list__item__desc__tit">[라라스윗] 생우유 빵샌드 아이스크림 </span>
+                                            <div class="prod__list__item__desc__price">
+                                                <span class="sales__price sales__price__color">9,400<span class="won"> 원</span></span>
                                             </div>
-                                            <p class="css-13g46z0">폭신하고 달콤한 한 입</p>
+                                            <p class="prod__list__item__desc__tag">#빵 #과자 #음료수</p>
                                         </div>
                                     </a>
                                 </div>
