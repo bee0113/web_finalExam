@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/notice.css" />
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/common.js"></script>
+    <title>공지사항</title>
+    <script type="text/javascript">
+        $(function () {
+            var cnt = 3;
+            for (let index = 0; index < cnt; index++) {
+                var str = $('.prod__list__item').clone();
+                $('.prod__list').append(str);
+            }
+        });
+    </script>
+</head>
+<body class="header__member">
+    <!-- <div id="wrap"> -->
+    <header id="header">
+        <div class="header">
+            <a href="./index.html">
+                <h1 class="sta"></h1>
+            </a>
+            <div class="header__gnb">
+                <nav>
+                    <!-- 메인 메뉴 -->
+                    <ul>
+                        <li>
+                            <a href="#">수업미션</a>
+                            <!-- 서브 메뉴 -->
+                            <ul class="header__gnb__sub">
+                                <li><a href="./table.html">미션1 table</a></li>
+                                <li><a href="./product.html">미션2 product</a></li>
+                                <li><a href="./box.html">미션3 box</a></li>
+                                <li><a href="./position.html">미션4 position</a></li>
+                                <li><a href="./z-index.html">미션5 z-index</a></li>
+                                <li><a href="./index-old.html">미션5 수업용 index</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">나의작품</a>
+                            <!-- 서브 메뉴 -->
+                            <ul class="header__gnb__sub">
+                                <li><a href="./market.html">작품1 상품</a></li>
+                                <li><a href="./notice.html">작품2 공지사항</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#modal" id="m">모달</a>
+                            <!-- 서브 메뉴 -->
+                            <ul class="header__gnb__sub">
+                                <li><a href="#">긴바지</a></li>
+                                <li><a href="#">니트</a></li>
+                                <li><a href="#">반바지</a></li>
+                                <li><a href="#">스커트</a></li>
+                                <li><a href="#">대님</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">로그인/회원가입</a>
+                            <!-- 서브 메뉴 -->
+                            <ul class="header__gnb__sub">
+                                <li><a href="./login.html">로그인</a></li>
+                                <li><a href="./join.html">New 회원가입</a></li>
+                                <li><a href="./fieldset.html">회원가입</a></li>
+                                <li><a href="">사이트맵</a></li>
+                                <li><a href="">이미지맵</a></li>
+                                <li><a href="">레시피</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__member__info">
+                <a href="./login.html" class="btn__header__member">로그인</a>
+            </div>
+        </div>
+        <div class="header__gnb__sub__cover"></div>
+    </header>
+    <section>
+        <div id="">
+            <div class="visual__sub__container">
+                <div class="visual__sub__img">
+                    <div class="visual__sub">
+                        <div class="visual__sub__copy">
+                            <h2>공지사항</h2>
+                        </div>
+                    </div>
+                    <img src="../images/back3.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- </div> -->
+    <footer>
+        <div class="footer">
+            <div class="add">
+                <div class="copy">
+                    <p>05000 서울특별시 광진구 군자로 121 세종사이버대학교</p>
+                    <p>Tel : 02-2204-8000 &nbsp; Fax &nbsp; : 2-2204-8036 E-mail &nbsp; : webmaster@sjcu.ac.kr</p>
+                    <span>2022 Sejong Cyber University's YYS &nbsp;</span> ALL RIGHTS RESERVED.
+                </div>
+
+                <ul class="menu">
+                    <li>
+                        <a href="#none" class="privacy btn__pop--open" data-target="popMainFooter1">고객센터</a>
+                    </li>
+                    <li><a href="#none" class="btn__pop--open" data-target="popMainFooter2">이용안내</a></li>
+                    <li><a href="#none" class="btn__pop--open" data-target="popMainFooter3">서비스이용약관</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
