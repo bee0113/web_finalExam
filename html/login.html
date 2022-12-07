@@ -23,7 +23,7 @@
                     return false;
                 } else if (!reg.test(idd.val())) {
                     alert('아이디는 7~12자리로 지정하고\n특수문자가 포함되어야 합니다');
-                    idd.val("");
+                    idd.val('');
                     return false;
                 } else if (pw.val() == '') {
                     alert('비밀번호를 입력하세요');
@@ -31,8 +31,8 @@
                     return false;
                 } else if (idd.val() != 'admin12@' || pw.val() != '1234') {
                     alert('아이디와 비밀번호가 일치하지 않습니다.');
-                    idd.val("");
-                    pw.val("");
+                    idd.val('');
+                    pw.val('');
                     idd.focus();
                     return false;
                 } else {
@@ -69,11 +69,8 @@
                                     <a href="#">나의작품</a>
                                     <!-- 서브 메뉴 -->
                                     <ul class="header__gnb__sub">
-                                        <li><a href="#">작품1</a></li>
-                                        <li><a href="#">작품2</a></li>
-                                        <li><a href="#">작품3</a></li>
-                                        <li><a href="#">작품4</a></li>
-                                        <li><a href="#">작품5</a></li>
+                                        <li><a href="./market.html">작품1 상품</a></li>
+                                        <li><a href="./notice.html">작품2 공지사항</a></li>
                                     </ul>
                                 </li>
                                 <li>
