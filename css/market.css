@@ -43,7 +43,9 @@ a { color: inherit; text-decoration: none; background-color: transparent; }
 .prod__list__item { display: flex; height: 538px; color: rgb(51, 51, 51); flex-direction: column; cursor: pointer; } 
 .prod__list__item__img { overflow: hidden; position: relative; width: 249px; height: 320px; background-color: rgb(245, 245, 245); } 
 .prod__list__item__img > img { width: 100%; height: 100%; object-fit: cover; transition: all 0.5s ease-in-out 0s; } 
+.prod__list__item__img > img:hover { transform: scale(1.1); transition: 0.5s ease-in; } 
 .prod__list__item__like { position: absolute; right: 16px; bottom: 16px; } 
+.prod__list__item__like:hover {opacity: 0.5;} 
 
 .prod__list__item__desc { padding: 14px 10px 0px 0px; } 
 .prod__list__item__desc__best { display: block; padding-bottom: 2px; } 
