@@ -47,7 +47,7 @@
 
 .header__gnb nav > ul > li { position: relative; float: left; padding-right: 70px; box-sizing: border-box; transition: all 0.4s ease; -webkit-transition: all 0.4s ease; } 
 
-.header__gnb nav > ul > li > a { display: inline-block; position: relative; height: 70px; padding: 0; color: #fff; line-height: 70px; font-size: 16px; font-weight: 700; } 
+.header__gnb nav > ul > li > a { display: inline-block; position: relative; height: 70px; padding: 0; color: #fff; line-height: 70px; font-size: 18px; font-weight: 700; } 
 
 /* s : 메뉴 하단 밑줄 색상 세팅 */
 .header__gnb nav > ul > li > a::after { display: block; position: absolute; bottom: -1px; left: 0; width: 0; height: 4px; background: #743ffe; content: ''; transition: all 0.3s ease; -webkit-transition: all 0.3s ease; } 
@@ -67,11 +67,11 @@
 
 .header__gnb nav > ul > li .header__gnb__sub > li:last-child { padding-bottom: 20px; } 
 
-.header__gnb nav > ul > li .header__gnb__sub > li > a { display: block; padding: 10px 10px 10px 0; font-size: 16px; font-weight: 400; letter-spacing: -0.1em; } 
+.header__gnb nav > ul > li .header__gnb__sub > li > a { display: block; padding: 10px 10px 10px 0; font-size: 18px; font-weight: 400; letter-spacing: -0.1em; } 
 
 .header__gnb nav > ul > li .header__gnb__sub a:hover { color: #743ffe; } /* 메뉴 하단 밑줄 색상 */
 
-.header__gnb nav > ul > li .header__gnb__sub li ul li a { display: block; padding: 4px 0 4px 5px; font-size: 15px; font-weight: 400; letter-spacing: -0.1em; } 
+.header__gnb nav > ul > li .header__gnb__sub li ul li a { display: block; padding: 4px 0 4px 5px; font-size: 17px; font-weight: 400; letter-spacing: -0.1em; } 
 
 #header:hover { background: #fff; border-bottom: solid 1px #ddd; } 
 #header:hover .header .btn__header__member { background: url('../images/ico-member-on.png') no-repeat center; } 

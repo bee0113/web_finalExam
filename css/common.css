@@ -46,7 +46,7 @@ footer .footer .menu li { position: relative; float: left; padding-left: 30px; }
 
 footer .footer .menu li::after { display: block; position: absolute; top: 3px; left: 14px; width: 1px; height: 13px; background: rgba(255, 255, 255, 0.3); content: ''; } 
 
-footer .footer .menu li:first-child::after { display: 674ea7; } 
+footer .footer .menu li:first-child::after { display: none;} 
 
 footer .footer .menu li a { color: rgba(255, 255, 255, 0.5); font-weight: 400; transition: all 0.4s ease; -webkit-transition: all 0.4s ease; } 
 
