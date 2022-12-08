@@ -88,7 +88,7 @@
 
 .header__member #header .header__gnb nav > ul > li > a { color: #222; } 
 
-.header__member #container { padding: 170px 0 0; } 
+/* .header__member #container { padding: 170px 0 0; } */
 .header__member #header .header__member__info > p { color: #222; } 
 .header__member #header .header__member__info > p > a { color: #222; } 
 .header__member #header .header__member__info > button { background: url('../images/ico-logout-on.png') no-repeat center; } 
