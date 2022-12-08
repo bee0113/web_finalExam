@@ -775,3 +775,20 @@ table .align--left {
 	text-indent: -9999px;
 	background: url("../images/ico-board-last.png") no-repeat center;
 }
+.wrap__page__count .wrap__page__btn.right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+}
+.wrap__page__btn.right {
+	text-align: right;
+}
+.wrap__page__btn {
+	margin: 50px 0 0;
+	font-size: 0;
+}
+.wrap__page__btn.right .btn__base {
+    margin-left: 20px;
+    height: 56px;
+}

@@ -64,4 +64,24 @@ footer .footer .menu li a:hover { color: #743ffe; }
 .btn__base { display: inline-block; position: relative; height: 56px; padding: 0 16px; text-align: center; min-width: 180px; font-weight: 400; font-size: 16px; border-radius: 4px; cursor: pointer; transition: all 0.4s ease; -webkit-transition: all 0.4s ease; box-sizing: border-box; } 
 .btn__yes { border: solid 1px #674ea7; background: #674ea7; color: #fff; } 
 .btn__yes:hover { border: solid 1px #b99ffe; background: #b99ffe; color: #fff; } 
-.btn__no { border: solid 1px #ddd; background: #ddd; color: #141414; } 
+.btn__no { border: solid 1px #ddd; background: #ddd; color: #141414; }
+
+/* s : 기본 버튼 세팅 */
+.btn__search--line{position: relative; display: inline-block; font-weight: 400; font-size: 16px; color: #222; background: #fff url('../images/ico-search.png') no-repeat 16px 9px; height: 56px; padding: 0 16px 0 44px; border: solid 1px #222; cursor: pointer; border-radius: 4px; transition: all .4s ease; -webkit-transition: all .4s ease; box-sizing: border-box;}
+.btn__search--line:hover{color: #fff; background: #666 url('../images/ico-search-over.png') no-repeat 16px 9px;}
+
+.btn__base{position: relative; display: inline-block; height: 56px; padding: 0 16px; text-align: center; min-width: 180px; font-weight: 400; font-size: 16px; border-radius: 4px; cursor: pointer; transition: all .4s ease; -webkit-transition: all .4s ease; box-sizing: border-box;}
+.btn__base:hover{color: #fff; background: #666;}
+
+.btn__base--line{color: #222 ; background: #fff; border: solid 1px #222 ;}
+.btn__base--line:hover{color: #fff; background: #666; border: solid 1px #666;}
+
+.btn__base--color1{color: #fff;  background: #01b8e6 ; border: solid 1px #01b8e6;}
+.btn__base--color1:hover{background: #666; color: #fff; border: solid 1px #666;}
+
+.btn__base--color2{color: #fff; background: #222; border: solid 1px #222;}
+.btn__base--color2:hover{background: #666; color: #fff; border: solid 1px #666;}
+
+.btn__base--color3{color: #fff; background: #053573; border: solid 1px #053573;}
+.btn__base--color3:hover{background: #666; color: #fff; border: solid 1px #666;}
+/* e : 기본 버튼 세팅 */
