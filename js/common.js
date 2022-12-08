@@ -36,6 +36,26 @@ $(function () {
 	*/
 });
 
+// 레이어 211009
+$(function() {
+	var popReadyNum = $('.pop__main').length;
+	
+	if(popReadyNum != 0) {
+		$('.pop--overlay').show();
+	}	
+
+	$(document).on('click','.btn--close',function(){	
+		$(this).parents('.pop__main').addClass('hide').fadeOut('fast');
+		
+		var popNum = $('.pop__main').not('.hide').length;
+		
+		if(popNum == 0) {
+			$('.pop--overlay').fadeOut('fast');
+			$('.wrap__pop__main').fadeOut('fast');
+		}
+	});
+});
+
 function isNull(obj) {
     var obj = obj;
     if (obj === null) {
