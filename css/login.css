@@ -18,6 +18,7 @@ input[type='submit']:hover { background-color: aqua; color: black; }
 images.avatar { width: 40%; border-radius: 50%; } 
 */
 
+.header__member #container { padding: 170px 0 0; }
 .wrap__login { position: relative; width: 384px; margin: 0 auto; } 
 
 .wrap__login:after { display: block; clear: both; content: ''; } 

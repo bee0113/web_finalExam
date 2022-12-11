@@ -45,7 +45,7 @@ a { color: inherit; text-decoration: none; background-color: transparent; }
 .prod__list__item__img > img { width: 100%; height: 100%; object-fit: cover; transition: all 0.5s ease-in-out 0s; } 
 .prod__list__item__img > img:hover { transform: scale(1.1); transition: 0.5s ease-in; } 
 .prod__list__item__like { position: absolute; right: 16px; bottom: 16px; } 
-.prod__list__item__like:hover {opacity: 0.5;} 
+.prod__list__item__like > img:hover { opacity: 0.9; background-color: #887fa1; border-radius: 50%; padding-top: 2px;}
 
 .prod__list__item__desc { padding: 14px 10px 0px 0px; } 
 .prod__list__item__desc__best { display: block; padding-bottom: 2px; } 
